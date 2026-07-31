@@ -20,28 +20,32 @@
 </head>
 <body>
     <h1>Política de Privacidade</h1>
-    <p class="updated">Última atualização: 16 de maio de 2026</p>
+    <p class="updated">Última atualização: 30 de julho de 2026</p>
 
     <h2>Visão Geral</h2>
     <p>Carteira PIX ("o App") é um gerenciador pessoal de chaves PIX e gerador de cobranças. Sua privacidade é importante para nós. Esta política explica como tratamos seus dados.</p>
 
     <h2>Coleta de Dados</h2>
-    <p>O App <strong>não</strong> coleta, transmite ou compartilha dados pessoais com terceiros. Todos os dados inseridos (chaves PIX, cobranças, configurações) são armazenados exclusivamente no seu dispositivo.</p>
+    <p>O App <strong>não</strong> coleta, transmite ou compartilha dados pessoais (como CPF, CNPJ, e-mail, telefone, valores de cobrança, chaves PIX ou payloads EMV) com terceiros. Todos os dados inseridos (chaves PIX, cobranças, configurações) são armazenados exclusivamente no seu dispositivo.</p>
 
-    <h2>Sincronização iCloud</h2>
-    <p>Se você ativar a sincronização via iCloud, seus dados serão armazenados na sua conta privada do iCloud usando o serviço CloudKit da Apple. Esses dados são acessíveis apenas por você, em dispositivos conectados ao seu Apple ID. Não temos acesso aos seus dados do iCloud.</p>
-
-    <h2>Análises e Rastreamento</h2>
-    <p>O App não utiliza nenhum framework de análise, publicidade ou rastreamento. Nenhum dado de uso é coletado ou enviado a qualquer lugar.</p>
+    <h2>Análises de Uso (Firebase Analytics)</h2>
+    <p>O App utiliza o <strong>Firebase Analytics (Google)</strong> para entender como os usuários interagem com o App e melhorar a experiência. Os dados coletados são:</p>
+    <ul>
+        <li><strong>Informações técnicas automáticas:</strong> modelo do dispositivo, versão do sistema operacional, versão do App, duração da sessão.</li>
+        <li><strong>Eventos de uso:</strong> tipo de chave PIX criada (categoria, não o valor), categoria de cobrança (ex: "Pessoal" ou "Trabalho"), tema escolhido, preferência de biometria — todos sem conteúdo sensível.</li>
+        <li><strong>Identificador do dispositivo:</strong> um identificador anônimo gerado pelo Firebase para distinguir usuários únicos.</li>
+    </ul>
+    <p><strong>O que NÃO é coletado:</strong> nenhum dado pessoal inserido no App (CPF, CNPJ, e-mail, telefone, nome do titular, valores de cobrança, chaves PIX, payloads EMV, nome do banco) é enviado ao Firebase ou a qualquer outro serviço.</p>
+    <p>Para mais informações, consulte a <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Política de Privacidade do Firebase</a> e a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidade do Google</a>.</p>
 
     <h2>Dados Biométricos</h2>
     <p>Se você ativar a autenticação biométrica (Face ID / Touch ID), o App utiliza o framework LocalAuthentication da Apple. Os dados biométricos são tratados inteiramente pelo sistema operacional e nunca são acessados ou armazenados pelo App.</p>
 
     <h2>Armazenamento de Dados</h2>
-    <p>Todos os dados são armazenados localmente no seu dispositivo usando o framework SwiftData da Apple. Se a sincronização via iCloud estiver ativada, os dados também são armazenados no seu container privado do CloudKit. Você pode excluir seus dados a qualquer momento dentro do App ou nas Configurações do iOS.</p>
+    <p>Todos os dados são armazenados localmente no seu dispositivo usando o framework SwiftData da Apple. Você pode excluir seus dados a qualquer momento dentro do App ou nas Configurações do iOS.</p>
 
     <h2>Serviços de Terceiros</h2>
-    <p>O App não integra com nenhum serviço, API ou SDK de terceiros.</p>
+    <p>O App utiliza o <strong>Firebase Analytics</strong>, um serviço de análise fornecido pelo Google, para coletar dados anônimos de uso conforme descrito na seção "Análises de Uso". Nenhum outro serviço, API ou SDK de terceiros é utilizado. O App não utiliza frameworks de publicidade ou rastreamento.</p>
 
     <h2>Privacidade de Crianças</h2>
     <p>O App não coleta dados de crianças intencionalmente. Como nenhum dado pessoal é coletado de qualquer usuário, isso se aplica igualmente a todas as faixas etárias.</p>
